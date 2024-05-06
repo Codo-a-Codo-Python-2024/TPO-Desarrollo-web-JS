@@ -32,7 +32,7 @@
 }
 
 /* desktop */
-@media screen and (min-width: 1024px) {
+
     /* estilos navbar */
 .logoContainer img{
     height: 65px;
@@ -97,7 +97,7 @@
     opacity: 0.4
   }
   
-  .overlay {
+  .overlayHero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,28 +110,28 @@
     opacity: 0.7;
   }
   
-  .overlay span:nth-child(1) {
+  .overlayHero span:nth-child(1) {
     margin-bottom: 10px; 
   }
   
-  .overlay span:nth-child(3) {
+  .overlayHero span:nth-child(3) {
     margin-top: 10px; 
   }
   
-  .overlay span,
-  .overlay h2 {
+  .overlayHero span,
+  .overlayHero h2 {
     z-index: 1;
     background: transparent;
     text-align: center;
     letter-spacing: 5px;
   }
   
-  .overlay h2 {
+  .overlayHero h2 {
     font-family: 'aleo', sans-serif;
     font-size: 8rem;
   }
   
-  .overlay span {
+  .overlayHero span {
     font-size: 1.3rem;
     
   }
@@ -154,9 +154,6 @@
   .hero .button-container button {
     margin-right: 10px; 
     margin-top: 2rem;
-   
-
-    
   }
   
   .hero button{
@@ -237,6 +234,80 @@
   right: -25%;
   z-index: -1;
 }
+/* estilos services */
+.servicesContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.servicesTitle{
+  font-family: 'Abhaya-Libre', Georgia, 'Times New Roman';
+  font-size: 2.5rem;
+  font-weight: 200;
+
+}
+
+.titleClarification{
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.imgContainer{
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  height: 600px; 
+  width: 400px; 
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h3,
+.overlay p {
+  margin: 0;
+  padding: 10px;
+  background: transparent;
+  color: #c3c3c3;
+  line-height: 1.5; /* Ajusta el espaciado entre líneas */
+  text-align: center;
+}
+
+
+/* fin estilos services */
 
 /* estilos footer */
 .footerContainer {
@@ -258,17 +329,5 @@
   font-weight: 500;
 }
 
-
 /* fin estilos footer */
 
-
-
-
-
-
-
-
-
-
-
-}
