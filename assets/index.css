@@ -16,6 +16,7 @@
     background-color: var(--light-brown);
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
+    scroll-behavior: smooth;
 }
 
 
@@ -43,7 +44,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -63,29 +64,19 @@
 
 .links a {
   text-decoration: none;
-  padding: 10px;
+  padding: 10px;  
   cursor: pointer;
 
+ 
 }
 
-
-
-.links a.active {
+.links a:hover, i:hover{
   background-color: var(--cream);
   border-radius: 5px;
-
-  & i.active{
-    background-color: var(--cream);
-    border-radius: 5px;
-  }
-
 }
-
+ 
 .links i {
   margin-right: 8px;
-}
-
-    
 }
 /* fin estilos navbar */
 
@@ -120,11 +111,11 @@
   }
   
   .overlay span:nth-child(1) {
-    margin-bottom: 10px; /* Espacio entre el h2 y el span */
+    margin-bottom: 10px; 
   }
   
   .overlay span:nth-child(3) {
-    margin-top: 10px; /* Espacio entre el h2 y el último span */
+    margin-top: 10px; 
   }
   
   .overlay span,
@@ -177,6 +168,10 @@
     border-right: 4px solid var(--text-color);
     border-top: transparent;
     border-left: transparent;
+
+    & a{
+      text-decoration: none;
+    }
   }
 
   .hero button:hover {   
@@ -188,7 +183,58 @@
   transform: translateY(2px);
   box-shadow: none; 
 }
+/* fin estilos hero section */
 
 
+/* estilos about */
+.aboutTitle{
+  font-family: 'Abhaya-Libre', Georgia, 'Times New Roman';
+  font-size: 2.5rem;
+  font-weight: 200;
+  padding-top: 20px;
+}
 
+.aboutImg{
+  height: 500px;
+  border-radius: 10px;
+}
 
+.aboutContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  gap: 30px;
+  
+ 
+}
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  background-color: transparent; 
+  
+}
+
+.aboutText {
+  text-align: center;
+  width: 450px;
+  line-height: 30px;
+  margin-top: 1.5rem;
+ padding-right: 25px;
+}
+
+.aboutText::before {
+  content: "";
+  position: absolute;
+  background-color: var(--dark-green);
+  width: 85%;
+  height: 100%;
+  top: -10%;
+  right: -25%;
+  z-index: -1;
+}
+}
