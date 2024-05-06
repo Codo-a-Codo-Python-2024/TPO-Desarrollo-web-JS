@@ -237,4 +237,38 @@
   right: -25%;
   z-index: -1;
 }
+
+/* estilos footer */
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.footerContainer p, .footerContainer a {
+  background-color: transparent;
+}
+
+.footerContainer a:hover {
+  color: var(--dark-green);
+  font-weight: 500;
+}
+
+
+/* fin estilos footer */
+
+
+
+
+
+
+
+
+
+
+
 }
