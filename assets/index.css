@@ -48,8 +48,7 @@
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
- 
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
@@ -308,6 +307,126 @@
 
 
 /* fin estilos services */
+
+/* inicio estilos contacto*/
+
+.containerContacto{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.containerForm{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; 
+  width: 60%;
+  margin: 5%;  
+
+  border : 1px solid gray;
+  border-radius: 10px ;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.inputgroup  {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 30px 20px 20px 20px;
+}
+
+label{
+  color: black;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+select{
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  outline: none;
+}
+
+
+  
+input, textarea{
+  padding: 15px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  outline: none;
+  resize: none;
+}
+
+
+
+.btn{
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: var(--dark-green);
+  box-shadow: 0 0 10px var(--dark-green);
+  cursor: pointer;
+}
+
+.infoContainer{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px;
+
+  
+
+  
+}
+.ubiContainer img{
+
+  width: 30px;
+  height: 30px;
+  
+  
+}
+
+.ubiContainer{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  height: 300px;
+  padding: 30px 30px 30px 30px;
+}
+
+div > h3{
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.diasContainer{
+
+  font-size-adjust: 15px;
+  padding-left: 30px;
+  padding-top: 30px;
+
+}
+.dire{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+
+
+
 
 /* estilos footer */
 .footerContainer {
