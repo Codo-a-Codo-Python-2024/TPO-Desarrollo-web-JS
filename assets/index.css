@@ -355,6 +355,12 @@ select{
   outline: none;
 }
 
+.error{
+  color: red;
+  font-size: 12px;
+
+}
+
 
   
 input, textarea{
