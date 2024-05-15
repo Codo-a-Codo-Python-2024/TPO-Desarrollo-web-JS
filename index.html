@@ -100,7 +100,7 @@
       <!-- inicio services section -->
       <section id="services" class="servicesContainer">
         <h2 class="servicesTitle">Nuestros Servicios</h2>
-        <p class="titleClarification">(Posiciona el mouse sobre cada imagen para ver los detalles)</p>
+        <p class="titleClarification">(Toca o apoya el mouse sobre cada imagen para ver los detalles)</p>
         <div class="imgContainer">
 
             <div class="imageWrapper">
@@ -222,19 +222,19 @@
 
 
     <div class="containerForm">
-      <form action="">
+      <form action="" id="formu" novalidate>
 
         <h3>Solicitud de turnos</h3>
         <div class="inputgroup">
 
-          <label for="servicio">Servicio</label>
+          <span>Servicio</span>
 
-
+        <div id="errorServicio" class="error"></div>
           <select name="servicio" id="servicio">
 
             <option value="vacio">-seleccionar-</option>
             <option value="consulta">Consulta</option>
-            <option value="hilos">Análisis de piel</option>
+            <option value="analisis">Análisis de piel</option>
             <option value="limpieza">Limpieza facial profunda</option>
             <option value="spa">Spa facial</option>
             <option value="peeling">Peeling</option>
@@ -250,26 +250,33 @@
 
 
 
-          <label for="name">Nombre</label>
-          <input type="text" name="name" id="name" placeholder="Nombre">
+          <label for="nombre">Nombre</label>
+          <div id="errorNombre" class="error"></div>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off">
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Email">
+          <div id="errorEmail" class="error"></div>
+          <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
 
           <label for="telefono">Telefono</label>
-          <input type="tel" name="tel" id="tel" placeholder="Telefono">
+          <div id="errorTel" class="error"></div>
+          <input type="tel" name="telefono" id="telefono" placeholder="Telefono" autocomplete="off">
 
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escriba un mensaje"></textarea>
           <span for="horario">Elegí en que rango horario podemos contactarte</span>
 
-          <label for="morning">De 9 a 13</label> <input type="radio" id="" name="morning" value="" checked />
+          <span for="horario">De 9 a 13</span> <input type="radio" id="morning" name="horario" value="morning"
+            checked />
 
-          <label for="afternoon">De 13 a 17</label><input type="radio" id="" name="afternoon" value=""/>
-         
-          <label for="evening">De 17 a 20</label> <input type="radio" id="" name="evening" value=""/>
+          <span for="horario">De 13 a 17</span><input type="radio" id="afternoon" name="horario" value="afternoon" />
 
-          <input class="btn" type="submit" value="Enviar">
+          <span for="horario">De 17 a 20</span> <input type="radio" id="evening" name="horario" value="evening" />
+          
+      <input class="btn" type="submit" value="Enviar">
+    
+
+          
 
         </div>
       </form>
