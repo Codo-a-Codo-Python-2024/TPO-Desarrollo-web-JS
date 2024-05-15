@@ -33,22 +33,38 @@
         </div>
 
         <div class="links">
-          <a href="#home" class="active"
-            ><i class="fa-solid fa-house-chimney active"></i>Home</a
-          >
+       
+          <div class="link-container">
+            <a href="#home">
+              <i class="fa-solid fa-house-chimney"></i>Home
+            </a>
+          </div>
+
+          <div class="link-container">
           <a href="#about"
-            ><i class="fa-solid fa-user active"></i>Quiénes somos</a
+            ><i class="fa-solid fa-user"></i>Quiénes somos</a
           >
+        </div>
+
+          <div class="link-container">
           <a href="#services"
-            ><i class="fa-solid fa-spa active"></i>Servicios</a
+            ><i class="fa-solid fa-spa"></i>Servicios</a
           >
+        </div>
+
+          <div class="link-container">
           <a href="#location"
-            ><i class="fa-solid fa-location-dot active"></i>Dónde
+            ><i class="fa-solid fa-location-dot"></i>Dónde
             encontrarnos</a
           >
+        </div>
+
+          <div class="link-container">
           <a href="#contact"
-            ><i class="fa-solid fa-phone active"></i>Contacto</a
+            ><i class="fa-solid fa-phone"></i>Contacto</a
           >
+        </div>
+
         </div>
       </nav>
     </header>
@@ -191,47 +207,51 @@
         <!-- fin services section -->
 
         <!--inicio seccion ubicacion-->
-    <section class="infoContainer" id="about">
 
-      <div class="ubiContainer">
-        <div class="dire">
-          <img src="assets/images/pin.png" alt="">
-          <h3>Direccion: </h3>
-          <p> Viamonte 2180 1° C, C1407 Buenos Aires</p>
+        <section class="locationContainer" id="location">
+          <h2 class="locationTitle">Dónde encontrarnos</h2>
+        
+          <div class="contentContainer">
 
-        </div>
-        <div class="diasContainer">
-          <h3>Dias y Horarios de atención</h3>
-          <p>Lunes a Sabados de 9hs a 20 hs</p>
+            <div class="availabilityContainer">
+              <h3>Días y Horarios de atención:</h3>
+              <p>Lunes a Sábados de 9hs a 20 hs</p>
+         </div>
 
-        </div>
-      </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1189124093576!2d-58.40081402302332!3d-34.60115447295516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca94c2fef261%3A0x650020fd194cf0b3!2sViamonte%202180%2C%20C1056%20ABH%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715457458612!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="address">
+              <img src="assets/images/pin.png" alt="pin">
+                <h3>Dirección:</h3>
+                <p>Viamonte 2180 1° C, C1407 CABA</p>
+              </div>
 
-    </section>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1189124093576!2d-58.40081402302332!3d-34.60115447295516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca94c2fef261%3A0x650020fd194cf0b3!2sViamonte%202180%2C%20C1056%20ABH%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1715457458612!5m2!1ses!2sar" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+       
+        </section>
+        
+ 
     <!--fin seccion ubicacion-->
 
  <!--inicio seccion contacto-->
- <section>
+ <section id="contact">
 
   <div class="containerContacto">
-    <div>
-      <p>Ingrese sus datos y en la brevedad nos estaremos comunicando para coordinar un turno
+
+    <div class="title-container-form">
+      <h2 class="titleForm">Contacto</h2>
+      <p>(Ingrese sus datos y en la brevedad nos estaremos comunicando para coordinar un turno)
       </p>
     </div>
 
 
     <div class="containerForm">
-      <form action="" id="formu" novalidate>
-
-        <h3>Solicitud de turnos</h3>
+      <form action="" id="formu" novalidate>        
         <div class="inputgroup">
 
-          <span>Servicio</span>
-
+          <label for="servicio">Servicio</label>
         <div id="errorServicio" class="error"></div>
           <select name="servicio" id="servicio">
-
             <option value="vacio">-seleccionar-</option>
             <option value="consulta">Consulta</option>
             <option value="analisis">Análisis de piel</option>
@@ -252,29 +272,42 @@
 
           <label for="nombre">Nombre</label>
           <div id="errorNombre" class="error"></div>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre" autocomplete="off">
+          <input type="text" name="nombre" id="nombre" placeholder="Ej: María" autocomplete="off">
+
+          <label for="nombre">Apellido</label>
+          <div id="errorNombre" class="error"></div>
+          <input type="text" name="nombre" id="nombre" placeholder="Ej: Gonzalez" autocomplete="off">
 
           <label for="email">Email</label>
           <div id="errorEmail" class="error"></div>
-          <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+          <input type="email" name="email" id="email" placeholder="Ej: mariagonzalez@gmail.com" autocomplete="off">
 
           <label for="telefono">Telefono</label>
           <div id="errorTel" class="error"></div>
-          <input type="tel" name="telefono" id="telefono" placeholder="Telefono" autocomplete="off">
+          <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1123456789" autocomplete="off">
 
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escriba un mensaje"></textarea>
-          <span for="horario">Elegí en que rango horario podemos contactarte</span>
+          <p>¿En que rango horario le gustaria ser contactado?</p>
 
-          <span for="horario">De 9 a 13</span> <input type="radio" id="morning" name="horario" value="morning"
-            checked />
+          <span for="horario" class="radio-container">
+            <div class="radio-option">
+              <input type="radio" id="morning" name="horario" value="morning" checked />
+              <span>De 9 a 13</span>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="afternoon" name="horario" value="afternoon" />
+              <span>De 13 a 17</span>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="evening" name="horario" value="evening" />
+              <span>De 17 a 20</span>
+            </div>
+          </span>
 
-          <span for="horario">De 13 a 17</span><input type="radio" id="afternoon" name="horario" value="afternoon" />
-
-          <span for="horario">De 17 a 20</span> <input type="radio" id="evening" name="horario" value="evening" />
-          
-      <input class="btn" type="submit" value="Enviar">
-    
+          <div class="button-container">
+          <button type="submit" class="btnForm" >Enviar</button>
+        </div>
 
           
 
