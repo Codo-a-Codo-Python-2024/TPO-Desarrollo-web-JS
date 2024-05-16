@@ -235,22 +235,16 @@
 
  <!--inicio seccion contacto-->
  <section id="contact">
-
   <div class="containerContacto">
-
     <div class="title-container-form">
       <h2 class="titleForm">Contacto</h2>
-      <p>(Ingrese sus datos y en la brevedad nos estaremos comunicando para coordinar un turno)
-      </p>
+      <p>(Ingrese sus datos y en la brevedad nos estaremos comunicando para coordinar un turno)</p>
     </div>
-
-
     <div class="containerForm">
-      <form action="" id="formu" novalidate>        
+      <p class="aclaration">*Campos obligatorios</p>
+      <form action="" id="form" novalidate>
         <div class="inputgroup">
-
-          <label for="servicio">Servicio</label>
-        <div id="errorServicio" class="error"></div>
+          <label for="servicio">Servicio*</label>
           <select name="servicio" id="servicio">
             <option value="vacio">-seleccionar-</option>
             <option value="consulta">Consulta</option>
@@ -260,39 +254,28 @@
             <option value="peeling">Peeling</option>
             <option value="acne">Tratamiento para el acné</option>
             <option value="despigmentacion">Despigmentacion</option>
-
             <option value="botox">Fillers o Botox</option>
-
-
             <option value="hilos">Hilos tensores</option>
-
           </select>
-
-
-
-          <label for="nombre">Nombre</label>
-          <div id="errorNombre" class="error"></div>
+          <p id="errorSelect" class="error"></p>
+          <label for="nombre">Nombre*</label>
           <input type="text" name="nombre" id="nombre" placeholder="Ej: María" autocomplete="off">
-
-          <label for="nombre">Apellido</label>
-          <div id="errorNombre" class="error"></div>
-          <input type="text" name="nombre" id="nombre" placeholder="Ej: Gonzalez" autocomplete="off">
-
-          <label for="email">Email</label>
-          <div id="errorEmail" class="error"></div>
+          <p id="errorNombre" class="error"></p>
+          <label for="apellido">Apellido*</label>
+          <input type="text" name="apellido" id="apellido" placeholder="Ej: Gonzalez" autocomplete="off">
+          <p id="errorApellido" class="error"></p>
+          <label for="email">Email*</label>
           <input type="email" name="email" id="email" placeholder="Ej: mariagonzalez@gmail.com" autocomplete="off">
-
-          <label for="telefono">Telefono</label>
-          <div id="errorTel" class="error"></div>
-          <input type="tel" name="telefono" id="telefono" placeholder="Ej: 1123456789" autocomplete="off">
-
+          <p id="errorEmail" class="error"></p>
+          <label for="telefono">Telefono*</label>
+          <input type="text" name="telefono" id="telefono" placeholder="Ej: 1123456789" autocomplete="off">
+          <p id="errorTel" class="error"></p>
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escriba un mensaje"></textarea>
-          <p>¿En que rango horario le gustaria ser contactado?</p>
-
-          <span for="horario" class="radio-container">
+          <p>¿En qué rango horario le gustaría ser contactado?*</p>
+          <div class="radio-container">
             <div class="radio-option">
-              <input type="radio" id="morning" name="horario" value="morning" checked />
+              <input type="radio" id="morning" name="horario" value="morning"/>
               <span>De 9 a 13</span>
             </div>
             <div class="radio-option">
@@ -303,22 +286,17 @@
               <input type="radio" id="evening" name="horario" value="evening" />
               <span>De 17 a 20</span>
             </div>
-          </span>
-
+          </div>
+          <p id="errorHorario" class="error"></p>
           <div class="button-container">
-          <button type="submit" class="btnForm" >Enviar</button>
-        </div>
-
-          
-
+            <button  type="submit" class="btnForm" id="btnForm">Enviar</button>
+          </div>
         </div>
       </form>
     </div>
   </div>
-
-
-
 </section>
+
 <!--fin seccion contacto-->
 
 
@@ -335,5 +313,6 @@
 
 </footer>
 <!-- fin footer -->
+<script src="js/validations.js"></script>
   </body>
 </html>
