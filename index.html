@@ -27,14 +27,22 @@
   <body>
     <!-- inicio navbar -->
     <header>
+      
+
       <nav class="navContainer">
         <div class="logoContainer">
           <img src="https://res.cloudinary.com/dpxrcotbh/image/upload/v1715809995/uv6fuqnorrk5otaun05k.webp" alt="logo" />
         </div>
-
-        <div class="links">
        
+        <button class="open-menu" id="open">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="links" id="navLinks"> 
+          <button class="close-menu" id="close">X</button>
           <div class="link-container">
+        
+            
             <a href="#home">
               <i class="fa-solid fa-house-chimney"></i>Home
             </a>
@@ -52,7 +60,7 @@
           >
         </div>
 
-          <div class="link-container">
+          <div class="link-container" >
           <a href="#location"
             ><i class="fa-solid fa-location-dot"></i>Dónde
             encontrarnos</a
@@ -314,5 +322,6 @@
 </footer>
 <!-- fin footer -->
 <script src="js/validations.js"></script>
+<script src="js/hamb.js"></script>
   </body>
 </html>
