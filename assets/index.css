@@ -16,8 +16,7 @@
     background-color: var(--light-brown);
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
-    scroll-behavior: smooth;   
-    overflow-x: hidden; 
+    scroll-behavior: smooth;  
 }
 
 
@@ -185,6 +184,8 @@ cursor: pointer;
  .aboutContainer {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutImg {
@@ -195,6 +196,7 @@ cursor: pointer;
   .aboutContent {
     width: 100%; 
     padding: 20px; 
+  }
 
   .aboutText {
     width: 100%; 
@@ -204,11 +206,11 @@ cursor: pointer;
   }
 
   .aboutText::before {
-    display: none; 
+    display: none;
   }
+
+  
 /* fin about section */
-
-
 
 /* services */
 .servicesContainer{
@@ -328,9 +330,8 @@ cursor: pointer;
     gap: 10px;
   }
 }
-
-
 /* fin estilos donde encontrarnos */
+
 /* inicio estilos contacto*/
 
 .containerContacto{
@@ -486,7 +487,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 }
-}
+
 
 /* tablet */
 @media screen and  (min-width: 768px) and (max-width: 991px){
@@ -1001,10 +1002,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-weight: 500;
 }
 
-
-
-
-
 }
 
 
@@ -1012,9 +1009,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  
   @media screen and (min-width: 992px) {
  /* estilos navbar */
+
  .open-menu {
      display: none;
  }   
+
 .close-menu{
   display: none;
 }
@@ -1187,7 +1186,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 /* fin estilos hero section */
 
-
 /* estilos about */
 .aboutTitle{
   font-family: 'Abhaya-Libre', Georgia, 'Times New Roman';
@@ -1227,6 +1225,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   line-height: 30px;
   margin-top: 1.5rem;
  padding-right: 25px;
+
 }
 
 .aboutText::before {
@@ -1237,8 +1236,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   height: 100%;
   top: -10%;
   right: -25%;
-  z-index: -1;
+z-index: -1;
 }
+
 
 /* estilos services */
 .servicesContainer{
@@ -1513,3 +1513,4 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* fin estilos footer */
 
     }
+  
