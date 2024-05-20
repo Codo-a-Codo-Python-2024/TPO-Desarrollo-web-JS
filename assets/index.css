@@ -198,6 +198,7 @@ html, body {
   .footerContainer p,
   .footerContainer a {
     background-color: transparent;
+    text-align: center;
   }
 
   .footerContainer a:hover {
