@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--light-brown);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+
+
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    
+
+  .locationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+
+  .locationTitle {
+    font-family: "Abhaya-Libre", Georgia, "Times New Roman";
+    font-size: 2rem;
+    font-weight: 200;
+    border-top: 2px solid var(--text-color);
+    padding-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 50px;
+    width: 80%;
+    & img {
+      width: 30px;
+      height: 30px;
+      color: var(--text-color);
+    }
+
+    & .address {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* inicio estilos donde encontrarnos */
+    .locationContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+      gap: 2rem;
+    }
+  
+    .locationTitle {
+      font-family: "Abhaya-Libre", Georgia, "Times New Roman";
+      font-size: 2.5rem;
+      font-weight: 200;
+      border-top: 2px solid var(--text-color);
+      padding-top: 20px;
+      width: 600px;
+      text-align: center;
+    }
+  
+    .contentContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 2px solid var(--text-color);
+      padding-bottom: 50px;
+      width: 600px;
+      & img {
+        width: 30px;
+        height: 30px;
+        color: var(--text-color);
+      }
+  
+      & .address {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  
+    /* fin estilos donde encontrarnos */
+}
+
+/* desktop */
+
+@media screen and (min-width: 992px) {
+   /* inicio estilos donde encontrarnos */
+   .locationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+
+  .locationTitle {
+    font-family: "Abhaya-Libre", Georgia, "Times New Roman";
+    font-size: 2.5rem;
+    font-weight: 200;
+    border-top: 2px solid var(--text-color);
+    padding-top: 20px;
+    width: 800px;
+    text-align: center;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 50px;
+    width: 800px;
+    & img {
+      width: 30px;
+      height: 30px;
+      color: var(--text-color);
+    }
+
+    & .address {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  /* fin estilos donde encontrarnos */
+}
