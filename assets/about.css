@@ -47,7 +47,10 @@
   /* tablet */
   
   @media screen and (min-width: 768px) and (max-width: 991px) {
- /* estilos about */
+    .about{
+      overflow-x: visible;
+    }
+    
  .aboutTitle {
     font-family: "Abhaya-Libre", Georgia, "Times New Roman";
     font-size: 2.5rem;
@@ -105,7 +108,8 @@
   /* desktop */
   
   @media screen and (min-width: 992px) {
-/* estilos about */
+
+
 .aboutTitle {
     font-family: "Abhaya-Libre", Georgia, "Times New Roman";
     font-size: 2.5rem;
