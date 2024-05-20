@@ -92,16 +92,8 @@
   }
 
   .aboutText::before {
-    content: "";
-    position: absolute;
-    background-color: var(--dark-green);
-    width: 85%;
-    height: 100%;
-    top: -10%;
-    right: -25%;
-    z-index: -1;
+    display: none;
   }
-
   
   }
   
